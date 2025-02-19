@@ -1,0 +1,122 @@
+.globl swap
+.globl selectionSort
+.globl printArray
+
+#struct def'n for reference
+#struct studentNode {
+#   char name[6];
+#   int studentid;
+#   int coursenum;
+#};
+
+ 
+#/* Recursive function to perform selection sort on subarray `arr[i…n-1]` */
+#void selectionSort(studentNode arr[], int i, int n) {
+selectionSort:
+#callee setup goes here
+    
+#    /* find the minimum element in the unsorted subarray `[i…n-1]`
+#    // and swap it with `arr[i]`  */
+#    int j;
+#    int min = i;
+
+
+
+#    for (j = i + 1; j < n; j++)    {
+for1:
+
+
+forloop1:
+
+#        /* if `arr[j]` is less, then it is the new minimum */
+#        if (arr[j].studentid < arr[min].studentid) {
+if1:
+
+#            min = j;    /* update the index of minimum element */
+
+
+#        }
+endif1:
+
+
+endfor1:
+
+#    }
+ 
+#    /* swap the minimum element in subarray `arr[i…n-1]` with `arr[i] */
+#caller setup goes here
+
+
+#    swap(arr, min, i);
+
+
+#caller teardown goes here (if needed)
+ 
+#    if (i + 1 < n) {
+if2:
+
+#caller setup goes here
+
+#        selectionSort(arr, i + 1, n);
+
+#caller teardown goes here (if needed)
+
+
+#    }
+endif2:
+    
+#callee teardown goes here (if needed)
+
+
+#}
+ 
+#/* Function to print `n` elements of array `arr` */ 
+#void printArray(studentNode arr[], int n) {
+printArray:
+#callee setup goes here
+
+#    int i;
+
+#    for (i = 0; i < n; i++) {
+for2:
+
+
+forloop2:
+
+#use ecalls to implement printf
+#        printf("%d ", arr[i].studentid);
+
+
+#        printf("%s ", arr[i].name);
+
+
+#        printf("%d\n", arr[i].coursenum);
+
+
+#    }
+endfor2:
+
+#caller teardown goes here
+
+#}
+ 
+ 
+
+#/* Utility function to swap values at two indices in an array*/
+#void swap(studentNode arr[], int i, int j) {
+swap:
+#caller setup goes here
+
+#    studentNode temp = arr[i];
+
+
+#    arr[i] = arr[j];
+
+
+#    arr[j] = temp;
+
+
+#caller teardown goes here
+
+
+#}
