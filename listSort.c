@@ -101,7 +101,6 @@ struct Node* recurSelectionSort(struct Node* head)
 	struct Node* ptr;
 	struct Node* beforeMin; 
 
-
 	/* if there is only a single node */
 	if (head->next == NULL)
 		return head;

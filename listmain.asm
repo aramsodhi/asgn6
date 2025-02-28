@@ -23,7 +23,6 @@ main:
 	li	a7, 10
 	ecall
 	
-
 	.globl	addStudent
 # asm is nutty as the struct was passed in the registers.
 addStudent:
